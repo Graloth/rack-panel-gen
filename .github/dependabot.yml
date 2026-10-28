@@ -1,0 +1,12 @@
+# Keeps the GitHub Actions in .github/workflows up to date.
+# three.js and the fonts are vendored in site/, so update those by hand (see README).
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+  - package-ecosystem: pip
+    directory: /tests
+    schedule:
+      interval: monthly

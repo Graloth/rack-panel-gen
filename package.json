@@ -1,0 +1,11 @@
+{
+  "name": "rack-panel-generator",
+  "private": true,
+  "type": "module",
+  "description": "Blank rack front panels as STEP files, generated in the browser.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node tests/generate-cases.mjs && python3 tests/check_step.py",
+    "serve": "python3 -m http.server 8000 --directory site"
+  }
+}
